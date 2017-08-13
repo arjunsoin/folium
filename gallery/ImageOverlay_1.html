@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_4edc2b278bba43be88212b55320788d8 {
+            <style> #map_c4c4955d869c4160a828e2483f2850e6 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_4edc2b278bba43be88212b55320788d8" ></div>
+            <div class="folium-map" id="map_c4c4955d869c4160a828e2483f2850e6" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_4edc2b278bba43be88212b55320788d8 = L.map(
-                                  'map_4edc2b278bba43be88212b55320788d8',
+            var map_c4c4955d869c4160a828e2483f2850e6 = L.map(
+                                  'map_c4c4955d869c4160a828e2483f2850e6',
                                   {center: [37.0,0.0],
                                   zoom: 1,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_c51e7c3f41114192b3b91cd8f5b5f4e7 = L.tileLayer(
+            var tile_layer_9aafdb60ae504e92badf60bf51fafc9b = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,27 +66,27 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_4edc2b278bba43be88212b55320788d8);
+                ).addTo(map_c4c4955d869c4160a828e2483f2850e6);
 
         
     
-                var image_overlay_5a2162ea793a4541a43710d262a16cc4 = L.imageOverlay(
+                var image_overlay_fcff139a9ec043f0823ccbd9174e3a4e = L.imageOverlay(
                     'merc.png',
                     [[-82, -180], [82, 180]],
                     {"opacity": 0.8}
-                    ).addTo(map_4edc2b278bba43be88212b55320788d8);
+                    ).addTo(map_c4c4955d869c4160a828e2483f2850e6);
             
     
-            var layer_control_646c7fb405004639ba0cacad7d6e87e0 = {
-                base_layers : { "stamentoner" : tile_layer_c51e7c3f41114192b3b91cd8f5b5f4e7, },
-                overlays : { "macro_element_5a2162ea793a4541a43710d262a16cc4" : image_overlay_5a2162ea793a4541a43710d262a16cc4, }
+            var layer_control_8f62cd00e68c4ee88505bf2c57eed58a = {
+                base_layers : { "stamentoner" : tile_layer_9aafdb60ae504e92badf60bf51fafc9b, },
+                overlays : { "macro_element_fcff139a9ec043f0823ccbd9174e3a4e" : image_overlay_fcff139a9ec043f0823ccbd9174e3a4e, }
                 };
             L.control.layers(
-                layer_control_646c7fb405004639ba0cacad7d6e87e0.base_layers,
-                layer_control_646c7fb405004639ba0cacad7d6e87e0.overlays,
+                layer_control_8f62cd00e68c4ee88505bf2c57eed58a.base_layers,
+                layer_control_8f62cd00e68c4ee88505bf2c57eed58a.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_4edc2b278bba43be88212b55320788d8);
+                }).addTo(map_c4c4955d869c4160a828e2483f2850e6);
         
 </script>
