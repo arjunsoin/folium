@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_943b7e7989d8413e8a2504d1a04f6ab0 {
+            <style> #map_fde634abbd32402c8a1f159949c52953 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_943b7e7989d8413e8a2504d1a04f6ab0" ></div>
+            <div class="folium-map" id="map_fde634abbd32402c8a1f159949c52953" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_943b7e7989d8413e8a2504d1a04f6ab0 = L.map(
-                                  'map_943b7e7989d8413e8a2504d1a04f6ab0',
+            var map_fde634abbd32402c8a1f159949c52953 = L.map(
+                                  'map_fde634abbd32402c8a1f159949c52953',
                                   {center: [43.0,-100.0],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_1f4453e1a8f8436a864f0b52942648c1 = L.tileLayer(
+            var tile_layer_fbf0d8e9ad8c474c96d78c5e1b378efe = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,18 +66,18 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_943b7e7989d8413e8a2504d1a04f6ab0);
+                ).addTo(map_fde634abbd32402c8a1f159949c52953);
 
         
     
 
             
 
-                var geo_json_5585276b61fa48be917fbdd686ea5be8 = L.geoJson(
+                var geo_json_6c444558bf2942b9ae99e7b1580342b3 = L.geoJson(
                     "us-states.json"
                     
-                    ).addTo(map_943b7e7989d8413e8a2504d1a04f6ab0);
-                geo_json_5585276b61fa48be917fbdd686ea5be8.setStyle(function(feature) {return feature.properties.style;});
+                    ).addTo(map_fde634abbd32402c8a1f159949c52953);
+                geo_json_6c444558bf2942b9ae99e7b1580342b3.setStyle(function(feature) {return feature.properties.style;});
 
             
 </script>
