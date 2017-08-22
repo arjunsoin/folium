@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_0cdd00b104624105b336946d7704c042 {
+            <style> #map_4ff82ada5b034806bd8f41094f906dc1 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_0cdd00b104624105b336946d7704c042" ></div>
+            <div class="folium-map" id="map_4ff82ada5b034806bd8f41094f906dc1" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_0cdd00b104624105b336946d7704c042 = L.map(
-                                  'map_0cdd00b104624105b336946d7704c042',
+            var map_4ff82ada5b034806bd8f41094f906dc1 = L.map(
+                                  'map_4ff82ada5b034806bd8f41094f906dc1',
                                   {center: [0.0,0.0],
                                   zoom: 1,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_e9ef913a410f4505b3454f2d676dd547 = L.tileLayer(
+            var tile_layer_8ebc3558587847f0833894898d461f4a = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,39 +66,39 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_0cdd00b104624105b336946d7704c042);
+                ).addTo(map_4ff82ada5b034806bd8f41094f906dc1);
 
         
     
 
-            var marker_798a9b1906b9427591ed4f0258838ace = L.marker(
+            var marker_ec41d654c0e84d29a224f79ca872754d = L.marker(
                 [0,0],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_0cdd00b104624105b336946d7704c042);
+                .addTo(map_4ff82ada5b034806bd8f41094f906dc1);
             
     
 
-                var icon_9890f91c59634da79fa80a85e847e22f = L.AwesomeMarkers.icon({
+                var icon_7c893dfc25b4462eb270b3768e426dfd = L.AwesomeMarkers.icon({
                     icon: 'info-sign',
                     iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_798a9b1906b9427591ed4f0258838ace.setIcon(icon_9890f91c59634da79fa80a85e847e22f);
+                marker_ec41d654c0e84d29a224f79ca872754d.setIcon(icon_7c893dfc25b4462eb270b3768e426dfd);
             
     
-            var popup_4025ec8135c748628ad0e137461aef87 = L.popup({maxWidth: '300'});
+            var popup_14f61506995341f6b7a61d71db86a51e = L.popup({maxWidth: '300'});
 
             
-                var html_29f382c1cb754129ba26eece8ec45a85 = $('<div id="html_29f382c1cb754129ba26eece8ec45a85" style="width: 100.0%; height: 100.0%;">hello</div>')[0];
-                popup_4025ec8135c748628ad0e137461aef87.setContent(html_29f382c1cb754129ba26eece8ec45a85);
+                var html_928a887374544c41a0c8c44f5db9cd22 = $('<div id="html_928a887374544c41a0c8c44f5db9cd22" style="width: 100.0%; height: 100.0%;">hello</div>')[0];
+                popup_14f61506995341f6b7a61d71db86a51e.setContent(html_928a887374544c41a0c8c44f5db9cd22);
             
 
-            marker_798a9b1906b9427591ed4f0258838ace.bindPopup(popup_4025ec8135c748628ad0e137461aef87);
+            marker_ec41d654c0e84d29a224f79ca872754d.bindPopup(popup_14f61506995341f6b7a61d71db86a51e);
 
             
         

@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_a1054e4d35934fe2bf6fc18008847e99 {
+            <style> #map_616ee185429947dfb71a0261189e4fc3 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -37,7 +37,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_a1054e4d35934fe2bf6fc18008847e99" ></div>
+            <div class="folium-map" id="map_616ee185429947dfb71a0261189e4fc3" ></div>
         
 </body>
 <script>    
@@ -49,8 +49,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_a1054e4d35934fe2bf6fc18008847e99 = L.map(
-                                  'map_a1054e4d35934fe2bf6fc18008847e99',
+            var map_616ee185429947dfb71a0261189e4fc3 = L.map(
+                                  'map_616ee185429947dfb71a0261189e4fc3',
                                   {center: [35.68159659061569,139.76451516151428],
                                   zoom: 16,
                                   maxBounds: bounds,
@@ -61,7 +61,7 @@
             
         
     
-            var tile_layer_f1305dde60cd4d84a82971feafa23366 = L.tileLayer(
+            var tile_layer_1a34be08989c4fe9b63ddb00d5f4ad27 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -72,25 +72,25 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_a1054e4d35934fe2bf6fc18008847e99);
+                ).addTo(map_616ee185429947dfb71a0261189e4fc3);
 
         
     
-            map_a1054e4d35934fe2bf6fc18008847e99.timeDimension = L.timeDimension({period:"PT1M"});
-            map_a1054e4d35934fe2bf6fc18008847e99.timeDimensionControl = L.control.timeDimension({
+            map_616ee185429947dfb71a0261189e4fc3.timeDimension = L.timeDimension({period:"PT1M"});
+            map_616ee185429947dfb71a0261189e4fc3.timeDimensionControl = L.control.timeDimension({
                 position: 'bottomleft',
                 autoPlay: true,
                 playerOptions: {
                     transitionTime: 200,
                     loop: true}
                     });
-            map_a1054e4d35934fe2bf6fc18008847e99.addControl(map_a1054e4d35934fe2bf6fc18008847e99.timeDimensionControl);
+            map_616ee185429947dfb71a0261189e4fc3.addControl(map_616ee185429947dfb71a0261189e4fc3.timeDimensionControl);
 
-            var timestamped_geo_json_6b7db58d47cc46aaae25152d0ffc4960 = L.timeDimension.layer.geoJson(
+            var timestamped_geo_json_94c1563b178a4a8194274afb1ea7d165 = L.timeDimension.layer.geoJson(
                 L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[139.76451516151428, 35.68159659061569], [139.75964426994324, 35.682590062684206]]}, "properties": {"times": ["2017-06-02T00:00:00", "2017-06-02T00:10:00"], "style": {"color": "red", "weight": 5}}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[139.75964426994324, 35.682590062684206], [139.7575843334198, 35.679505030038506]]}, "properties": {"times": ["2017-06-02T00:10:00", "2017-06-02T00:20:00"], "style": {"color": "blue", "weight": 5}}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[139.7575843334198, 35.679505030038506], [139.76337790489197, 35.678040905014065]]}, "properties": {"times": ["2017-06-02T00:20:00", "2017-06-02T00:30:00"], "style": {"color": "green", "weight": 15}}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[139.76337790489197, 35.678040905014065], [139.76451516151428, 35.68159659061569]]}, "properties": {"times": ["2017-06-02T00:30:00", "2017-06-02T00:40:00"], "style": {"color": "#FFFFFF", "weight": 5}}}]}, {'style': function (feature) {
                     return feature.properties.style
                 }}),
                 {updateTimeDimension: true,addlastPoint: true}
-                ).addTo(map_a1054e4d35934fe2bf6fc18008847e99);
+                ).addTo(map_616ee185429947dfb71a0261189e4fc3);
         
 </script>
