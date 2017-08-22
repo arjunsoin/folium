@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_648fc7f0da7644cb998e5461f4e89b20 {
+            <style> #map_7321593dac6740ae996cdd2f7c89bdce {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_648fc7f0da7644cb998e5461f4e89b20" ></div>
+            <div class="folium-map" id="map_7321593dac6740ae996cdd2f7c89bdce" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_648fc7f0da7644cb998e5461f4e89b20 = L.map(
-                                  'map_648fc7f0da7644cb998e5461f4e89b20',
+            var map_7321593dac6740ae996cdd2f7c89bdce = L.map(
+                                  'map_7321593dac6740ae996cdd2f7c89bdce',
                                   {center: [41.0,-70.0],
                                   zoom: 5,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_fd9703942649471e8ce1849138c4e9ab = L.tileLayer(
+            var tile_layer_0e330a5926064f30b89411fd456b7003 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,11 +66,11 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_648fc7f0da7644cb998e5461f4e89b20);
+                ).addTo(map_7321593dac6740ae996cdd2f7c89bdce);
 
         
     
-            var macro_element_f34ce2a467c346eca0a2e5797349316f = L.tileLayer.wms(
+            var macro_element_f5e0d566b8434680938ff7a404a8f917 = L.tileLayer.wms(
                 'http://demo.opengeo.org/geoserver/ows',
                 {
                     
@@ -81,11 +81,11 @@
                     version: '1.1.1',
                     
                     }
-                ).addTo(map_648fc7f0da7644cb998e5461f4e89b20);
+                ).addTo(map_7321593dac6740ae996cdd2f7c89bdce);
 
         
     
-            var tile_layer_aa77d251c6a349ad897ba2ba79959c21 = L.tileLayer(
+            var tile_layer_1b67f8df12814d8ab54b222e09dd8b4f = L.tileLayer(
                 'http://hfradar.ndbc.noaa.gov/tilesavg.php?s=20&e=100&x={x}&y={y}&z={z}&t=2017-08-22 12:00&rez=1',
                 {
                     maxZoom: 18,
@@ -96,20 +96,20 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_648fc7f0da7644cb998e5461f4e89b20);
+                ).addTo(map_7321593dac6740ae996cdd2f7c89bdce);
 
         
     
-            var layer_control_81638422de914eeebb395e92811fcf8b = {
-                base_layers : { "openstreetmap" : tile_layer_fd9703942649471e8ce1849138c4e9ab, },
-                overlays : { "bluemarble" : macro_element_f34ce2a467c346eca0a2e5797349316f,"hfradar 1km" : tile_layer_aa77d251c6a349ad897ba2ba79959c21, }
+            var layer_control_5812362ed11741ed9691b949cd6178ac = {
+                base_layers : { "openstreetmap" : tile_layer_0e330a5926064f30b89411fd456b7003, },
+                overlays : { "bluemarble" : macro_element_f5e0d566b8434680938ff7a404a8f917,"hfradar 1km" : tile_layer_1b67f8df12814d8ab54b222e09dd8b4f, }
                 };
             L.control.layers(
-                layer_control_81638422de914eeebb395e92811fcf8b.base_layers,
-                layer_control_81638422de914eeebb395e92811fcf8b.overlays,
+                layer_control_5812362ed11741ed9691b949cd6178ac.base_layers,
+                layer_control_5812362ed11741ed9691b949cd6178ac.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_648fc7f0da7644cb998e5461f4e89b20);
+                }).addTo(map_7321593dac6740ae996cdd2f7c89bdce);
         
 </script>
