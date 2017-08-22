@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_839d7d8430d840baa2dc741035b6a235 {
+                position : absolute;
+                width : 50.0%;
+                height: 50.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #map_1f96deb3240d4409ae612ae0d724a738 {
+                position : absolute;
+                width : 50.0%;
+                height: 50.0%;
+                left: 50.0%;
+                top: 50.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_2e81d5f6c17549b0b4b304ddd92c5b11 {
+                position : absolute;
+                width : 50.0%;
+                height: 50.0%;
+                left: 50.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/1.4.3/vega.min.js"></script>
+    
+            <style> #vega_9acdc7365d664700af16c84abcd82748 {
+                position : absolute;
+                width : 50.0%;
+                height: 50.0%;
+                left: 0.0%;
+                top: 50.0%;
+            </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_839d7d8430d840baa2dc741035b6a235" ></div>
+        
+    
+            <div class="folium-map" id="map_1f96deb3240d4409ae612ae0d724a738" ></div>
+        
+    
+            <div id="vega_2e81d5f6c17549b0b4b304ddd92c5b11"></div>
+            
+    
+            <div id="vega_9acdc7365d664700af16c84abcd82748"></div>
+            
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_839d7d8430d840baa2dc741035b6a235 = L.map(
+                                  'map_839d7d8430d840baa2dc741035b6a235',
+                                  {center: [0.0,0.0],
+                                  zoom: 1,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_f71fc21fafeb44f6a09a5579d7f463f2 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false,
+                    subdomains: 'abc'
+                    }
+                ).addTo(map_839d7d8430d840baa2dc741035b6a235);
+
+        
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_1f96deb3240d4409ae612ae0d724a738 = L.map(
+                                  'map_1f96deb3240d4409ae612ae0d724a738',
+                                  {center: [46.0,3.0],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_2e3985aa831248a4b01e78789a431396 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false,
+                    subdomains: 'abc'
+                    }
+                ).addTo(map_1f96deb3240d4409ae612ae0d724a738);
+
+        
+    
+            vega_parse({"axes": [{"scale": "x", "type": "x"}, {"scale": "y", "type": "y"}], "data": [{"name": "table", "values": [{"col": "y", "idx": 0.9194475600231764, "val": 0.13771115555152513}, {"col": "y", "idx": 0.15817286592572422, "val": 0.39832339582579257}, {"col": "y", "idx": 0.9016690504830803, "val": 0.312897837563071}, {"col": "y", "idx": 0.8106422719403482, "val": 0.18863769608483083}, {"col": "y", "idx": 0.888924318675413, "val": 0.3611009447540344}, {"col": "y", "idx": 0.36582968701271934, "val": 0.6607687470806507}, {"col": "y", "idx": 0.5579974474124526, "val": 0.27329145577182423}, {"col": "y", "idx": 0.6597191258833224, "val": 0.5478159672949349}, {"col": "y", "idx": 0.46286510233430644, "val": 0.160660650308732}, {"col": "y", "idx": 0.13910260665758134, "val": 0.05039542903395777}, {"col": "y", "idx": 0.4039628479889812, "val": 0.4994822924684782}, {"col": "y", "idx": 0.5378116343784223, "val": 0.8679586991086291}, {"col": "y", "idx": 0.9217352339483348, "val": 0.10775111595983666}, {"col": "y", "idx": 0.8583654452105407, "val": 0.5727764469856627}, {"col": "y", "idx": 0.26656371775861565, "val": 0.38466514610721203}, {"col": "y", "idx": 0.0950650047559205, "val": 0.39967947075844534}, {"col": "y", "idx": 0.281590669945194, "val": 0.39963054592770597}, {"col": "y", "idx": 0.2856696645553771, "val": 0.8050892819996932}, {"col": "y", "idx": 0.09222131066800665, "val": 0.5255033705099337}, {"col": "y", "idx": 0.4821104060617748, "val": 0.771673764862853}, {"col": "y", "idx": 0.07961237955519218, "val": 0.5425843112696436}, {"col": "y", "idx": 0.44924124673157273, "val": 0.3685085506982806}, {"col": "y", "idx": 0.286446516623971, "val": 0.015563974780407053}, {"col": "y", "idx": 0.030060485239427948, "val": 0.7281080911595921}, {"col": "y", "idx": 0.4093759380644518, "val": 0.5772827988629745}, {"col": "y", "idx": 0.4682048083483741, "val": 0.808545539125449}, {"col": "y", "idx": 0.9001065014264462, "val": 0.32663814903368205}, {"col": "y", "idx": 0.8515977582191587, "val": 0.7286945507754853}, {"col": "y", "idx": 0.7781009529059547, "val": 0.635815399335287}, {"col": "y", "idx": 0.9844252582781433, "val": 0.15540335626983737}, {"col": "y", "idx": 0.6213412263820826, "val": 0.9870511151311098}, {"col": "y", "idx": 0.3240262719418424, "val": 0.35292360748506324}, {"col": "y", "idx": 0.9533440449619532, "val": 0.7564293762928332}, {"col": "y", "idx": 0.3907959461969446, "val": 0.6608790743625594}, {"col": "y", "idx": 0.6842148864407529, "val": 0.41788796542621054}, {"col": "y", "idx": 0.779861150636605, "val": 0.6758482896204354}, {"col": "y", "idx": 0.077239618627851, "val": 0.7729874567678977}, {"col": "y", "idx": 0.909291163920217, "val": 0.2252075058319799}, {"col": "y", "idx": 0.16335235683929383, "val": 0.8176149586366012}, {"col": "y", "idx": 0.2942357563521649, "val": 0.39029967492972595}, {"col": "y", "idx": 0.018695438672344133, "val": 0.6508738132417757}, {"col": "y", "idx": 0.2276193019679329, "val": 0.05257952704086777}, {"col": "y", "idx": 0.20766361337784878, "val": 0.15944435007633395}, {"col": "y", "idx": 0.13609358565710183, "val": 0.8233592018027251}, {"col": "y", "idx": 0.5839219362202454, "val": 0.9258681684552554}, {"col": "y", "idx": 0.34210118544533996, "val": 0.010064821599741869}, {"col": "y", "idx": 0.7849111695508505, "val": 0.13918340556309172}, {"col": "y", "idx": 0.266028034522957, "val": 0.12660153374783012}, {"col": "y", "idx": 0.793417782039249, "val": 0.8722094060909928}, {"col": "y", "idx": 0.7074584923898811, "val": 0.3464788025822817}, {"col": "y", "idx": 0.7087310037187377, "val": 0.8884925260238813}, {"col": "y", "idx": 0.9061174258209026, "val": 0.5278954129489909}, {"col": "y", "idx": 0.03463551185778346, "val": 0.1832942820491561}, {"col": "y", "idx": 0.9145863967022344, "val": 0.22405431012657673}, {"col": "y", "idx": 0.7207964652478949, "val": 0.2842106143837789}, {"col": "y", "idx": 0.39146526533845183, "val": 0.017221263724346736}, {"col": "y", "idx": 0.08629280901734737, "val": 0.4729508224450938}, {"col": "y", "idx": 0.046342201288935625, "val": 0.6303186172453505}, {"col": "y", "idx": 0.5472802162341496, "val": 0.22799311349207352}, {"col": "y", "idx": 0.9076749150340734, "val": 0.36587838466384937}, {"col": "y", "idx": 0.9477828692693118, "val": 0.14747560933984172}, {"col": "y", "idx": 0.5378795333231042, "val": 0.8403267774667382}, {"col": "y", "idx": 0.7399484657256135, "val": 0.4232284332094609}, {"col": "y", "idx": 0.5737135999202774, "val": 0.31636827733375794}, {"col": "y", "idx": 0.010075034165917707, "val": 0.0307176851528963}, {"col": "y", "idx": 0.5932026266049327, "val": 0.4850108188721204}, {"col": "y", "idx": 0.9943245500157911, "val": 0.9192510301590755}, {"col": "y", "idx": 0.8521562312369547, "val": 0.37948425867513913}, {"col": "y", "idx": 0.6828086711723744, "val": 0.7997558251504688}, {"col": "y", "idx": 0.46068043918232715, "val": 0.07018733720967685}, {"col": "y", "idx": 0.9604750323134764, "val": 0.014880611408046751}, {"col": "y", "idx": 0.22887713774608187, "val": 0.484987696794249}, {"col": "y", "idx": 0.19575122149807644, "val": 0.8298118225597186}, {"col": "y", "idx": 0.865912142240615, "val": 0.3241508137233272}, {"col": "y", "idx": 0.6014854878601652, "val": 0.5654809399656268}, {"col": "y", "idx": 0.2435323266789906, "val": 0.7630624131831597}, {"col": "y", "idx": 0.987622193202443, "val": 0.4942233922113093}, {"col": "y", "idx": 0.33327246448822756, "val": 0.10138895940112325}, {"col": "y", "idx": 0.9479436913232004, "val": 0.7982807430726971}, {"col": "y", "idx": 0.7807454561083488, "val": 0.13335659025863256}, {"col": "y", "idx": 0.5008985562991457, "val": 0.4628151916682648}, {"col": "y", "idx": 0.3687002412876105, "val": 0.9153706425099799}, {"col": "y", "idx": 0.19513226943494588, "val": 0.10767651692235392}, {"col": "y", "idx": 0.31153723263480626, "val": 0.8298250284155211}, {"col": "y", "idx": 0.2659154560946677, "val": 0.01033963976962149}, {"col": "y", "idx": 0.489453777559855, "val": 0.24780010672594133}, {"col": "y", "idx": 0.5277914665322299, "val": 0.6867646033521453}, {"col": "y", "idx": 0.18259094050050906, "val": 0.8743735114475266}, {"col": "y", "idx": 0.16234464407210125, "val": 0.3628422024518252}, {"col": "y", "idx": 0.2664334454356847, "val": 0.4083793524766669}, {"col": "y", "idx": 0.0641292682248279, "val": 0.5303983267870249}, {"col": "y", "idx": 0.3969756595536845, "val": 0.2595496182982132}, {"col": "y", "idx": 0.5232622270618041, "val": 0.6286715938631197}, {"col": "y", "idx": 0.9471046643418801, "val": 0.5166597013669996}, {"col": "y", "idx": 0.08299040224621779, "val": 0.5056888562444268}, {"col": "y", "idx": 0.029066991437965095, "val": 0.14116640481504705}, {"col": "y", "idx": 0.626614239597799, "val": 0.9290472614548089}, {"col": "y", "idx": 0.6015818970203312, "val": 0.8894273053294501}, {"col": "y", "idx": 0.12213525550629967, "val": 0.3686482283028244}, {"col": "y", "idx": 0.4412034238291277, "val": 0.7171195763359957}]}], "height": 250, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "size": {"value": 100}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "data.val", "scale": "y"}}}, "type": "symbol"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "range": "width", "type": "linear"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 420},vega_2e81d5f6c17549b0b4b304ddd92c5b11);
+            
+    function vega_parse(spec, div) {
+            vg.parse.spec(spec, function(chart) { chart({el:div}).update(); });}
+    
+            vega_parse({"axes": [{"scale": "x", "type": "x"}, {"scale": "y", "type": "y"}], "data": [{"name": "table", "values": [{"col": "y", "idx": 0.9194475600231764, "val": 0.13771115555152513}, {"col": "y", "idx": 0.15817286592572422, "val": 0.39832339582579257}, {"col": "y", "idx": 0.9016690504830803, "val": 0.312897837563071}, {"col": "y", "idx": 0.8106422719403482, "val": 0.18863769608483083}, {"col": "y", "idx": 0.888924318675413, "val": 0.3611009447540344}, {"col": "y", "idx": 0.36582968701271934, "val": 0.6607687470806507}, {"col": "y", "idx": 0.5579974474124526, "val": 0.27329145577182423}, {"col": "y", "idx": 0.6597191258833224, "val": 0.5478159672949349}, {"col": "y", "idx": 0.46286510233430644, "val": 0.160660650308732}, {"col": "y", "idx": 0.13910260665758134, "val": 0.05039542903395777}, {"col": "y", "idx": 0.4039628479889812, "val": 0.4994822924684782}, {"col": "y", "idx": 0.5378116343784223, "val": 0.8679586991086291}, {"col": "y", "idx": 0.9217352339483348, "val": 0.10775111595983666}, {"col": "y", "idx": 0.8583654452105407, "val": 0.5727764469856627}, {"col": "y", "idx": 0.26656371775861565, "val": 0.38466514610721203}, {"col": "y", "idx": 0.0950650047559205, "val": 0.39967947075844534}, {"col": "y", "idx": 0.281590669945194, "val": 0.39963054592770597}, {"col": "y", "idx": 0.2856696645553771, "val": 0.8050892819996932}, {"col": "y", "idx": 0.09222131066800665, "val": 0.5255033705099337}, {"col": "y", "idx": 0.4821104060617748, "val": 0.771673764862853}, {"col": "y", "idx": 0.07961237955519218, "val": 0.5425843112696436}, {"col": "y", "idx": 0.44924124673157273, "val": 0.3685085506982806}, {"col": "y", "idx": 0.286446516623971, "val": 0.015563974780407053}, {"col": "y", "idx": 0.030060485239427948, "val": 0.7281080911595921}, {"col": "y", "idx": 0.4093759380644518, "val": 0.5772827988629745}, {"col": "y", "idx": 0.4682048083483741, "val": 0.808545539125449}, {"col": "y", "idx": 0.9001065014264462, "val": 0.32663814903368205}, {"col": "y", "idx": 0.8515977582191587, "val": 0.7286945507754853}, {"col": "y", "idx": 0.7781009529059547, "val": 0.635815399335287}, {"col": "y", "idx": 0.9844252582781433, "val": 0.15540335626983737}, {"col": "y", "idx": 0.6213412263820826, "val": 0.9870511151311098}, {"col": "y", "idx": 0.3240262719418424, "val": 0.35292360748506324}, {"col": "y", "idx": 0.9533440449619532, "val": 0.7564293762928332}, {"col": "y", "idx": 0.3907959461969446, "val": 0.6608790743625594}, {"col": "y", "idx": 0.6842148864407529, "val": 0.41788796542621054}, {"col": "y", "idx": 0.779861150636605, "val": 0.6758482896204354}, {"col": "y", "idx": 0.077239618627851, "val": 0.7729874567678977}, {"col": "y", "idx": 0.909291163920217, "val": 0.2252075058319799}, {"col": "y", "idx": 0.16335235683929383, "val": 0.8176149586366012}, {"col": "y", "idx": 0.2942357563521649, "val": 0.39029967492972595}, {"col": "y", "idx": 0.018695438672344133, "val": 0.6508738132417757}, {"col": "y", "idx": 0.2276193019679329, "val": 0.05257952704086777}, {"col": "y", "idx": 0.20766361337784878, "val": 0.15944435007633395}, {"col": "y", "idx": 0.13609358565710183, "val": 0.8233592018027251}, {"col": "y", "idx": 0.5839219362202454, "val": 0.9258681684552554}, {"col": "y", "idx": 0.34210118544533996, "val": 0.010064821599741869}, {"col": "y", "idx": 0.7849111695508505, "val": 0.13918340556309172}, {"col": "y", "idx": 0.266028034522957, "val": 0.12660153374783012}, {"col": "y", "idx": 0.793417782039249, "val": 0.8722094060909928}, {"col": "y", "idx": 0.7074584923898811, "val": 0.3464788025822817}, {"col": "y", "idx": 0.7087310037187377, "val": 0.8884925260238813}, {"col": "y", "idx": 0.9061174258209026, "val": 0.5278954129489909}, {"col": "y", "idx": 0.03463551185778346, "val": 0.1832942820491561}, {"col": "y", "idx": 0.9145863967022344, "val": 0.22405431012657673}, {"col": "y", "idx": 0.7207964652478949, "val": 0.2842106143837789}, {"col": "y", "idx": 0.39146526533845183, "val": 0.017221263724346736}, {"col": "y", "idx": 0.08629280901734737, "val": 0.4729508224450938}, {"col": "y", "idx": 0.046342201288935625, "val": 0.6303186172453505}, {"col": "y", "idx": 0.5472802162341496, "val": 0.22799311349207352}, {"col": "y", "idx": 0.9076749150340734, "val": 0.36587838466384937}, {"col": "y", "idx": 0.9477828692693118, "val": 0.14747560933984172}, {"col": "y", "idx": 0.5378795333231042, "val": 0.8403267774667382}, {"col": "y", "idx": 0.7399484657256135, "val": 0.4232284332094609}, {"col": "y", "idx": 0.5737135999202774, "val": 0.31636827733375794}, {"col": "y", "idx": 0.010075034165917707, "val": 0.0307176851528963}, {"col": "y", "idx": 0.5932026266049327, "val": 0.4850108188721204}, {"col": "y", "idx": 0.9943245500157911, "val": 0.9192510301590755}, {"col": "y", "idx": 0.8521562312369547, "val": 0.37948425867513913}, {"col": "y", "idx": 0.6828086711723744, "val": 0.7997558251504688}, {"col": "y", "idx": 0.46068043918232715, "val": 0.07018733720967685}, {"col": "y", "idx": 0.9604750323134764, "val": 0.014880611408046751}, {"col": "y", "idx": 0.22887713774608187, "val": 0.484987696794249}, {"col": "y", "idx": 0.19575122149807644, "val": 0.8298118225597186}, {"col": "y", "idx": 0.865912142240615, "val": 0.3241508137233272}, {"col": "y", "idx": 0.6014854878601652, "val": 0.5654809399656268}, {"col": "y", "idx": 0.2435323266789906, "val": 0.7630624131831597}, {"col": "y", "idx": 0.987622193202443, "val": 0.4942233922113093}, {"col": "y", "idx": 0.33327246448822756, "val": 0.10138895940112325}, {"col": "y", "idx": 0.9479436913232004, "val": 0.7982807430726971}, {"col": "y", "idx": 0.7807454561083488, "val": 0.13335659025863256}, {"col": "y", "idx": 0.5008985562991457, "val": 0.4628151916682648}, {"col": "y", "idx": 0.3687002412876105, "val": 0.9153706425099799}, {"col": "y", "idx": 0.19513226943494588, "val": 0.10767651692235392}, {"col": "y", "idx": 0.31153723263480626, "val": 0.8298250284155211}, {"col": "y", "idx": 0.2659154560946677, "val": 0.01033963976962149}, {"col": "y", "idx": 0.489453777559855, "val": 0.24780010672594133}, {"col": "y", "idx": 0.5277914665322299, "val": 0.6867646033521453}, {"col": "y", "idx": 0.18259094050050906, "val": 0.8743735114475266}, {"col": "y", "idx": 0.16234464407210125, "val": 0.3628422024518252}, {"col": "y", "idx": 0.2664334454356847, "val": 0.4083793524766669}, {"col": "y", "idx": 0.0641292682248279, "val": 0.5303983267870249}, {"col": "y", "idx": 0.3969756595536845, "val": 0.2595496182982132}, {"col": "y", "idx": 0.5232622270618041, "val": 0.6286715938631197}, {"col": "y", "idx": 0.9471046643418801, "val": 0.5166597013669996}, {"col": "y", "idx": 0.08299040224621779, "val": 0.5056888562444268}, {"col": "y", "idx": 0.029066991437965095, "val": 0.14116640481504705}, {"col": "y", "idx": 0.626614239597799, "val": 0.9290472614548089}, {"col": "y", "idx": 0.6015818970203312, "val": 0.8894273053294501}, {"col": "y", "idx": 0.12213525550629967, "val": 0.3686482283028244}, {"col": "y", "idx": 0.4412034238291277, "val": 0.7171195763359957}]}], "height": 250, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "size": {"value": 100}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "data.val", "scale": "y"}}}, "type": "symbol"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "range": "width", "type": "linear"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 420},vega_9acdc7365d664700af16c84abcd82748);
+            
+</script>

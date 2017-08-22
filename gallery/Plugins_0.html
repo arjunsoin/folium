@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_26ba7e2181974603878c189cfe52fefd {
+            <style> #map_cb0ffbcb4a3442989afcbc4afab3587b {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -30,7 +30,7 @@
         
     
                 <style>
-                    #scroll_zoom_toggler_96ea67350ce145278b6cdb40a3b28f3d {
+                    #scroll_zoom_toggler_7675f6c9c61843f4894d6a5c4e3263e0 {
                         position:absolute;
                         width:35px;
                         bottom:10px;
@@ -46,13 +46,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_26ba7e2181974603878c189cfe52fefd" ></div>
+            <div class="folium-map" id="map_cb0ffbcb4a3442989afcbc4afab3587b" ></div>
         
     
-            <img id="scroll_zoom_toggler_96ea67350ce145278b6cdb40a3b28f3d" alt="scroll"
+            <img id="scroll_zoom_toggler_7675f6c9c61843f4894d6a5c4e3263e0" alt="scroll"
                  src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/png/512/arrow-move.png"
                  style="z-index: 999999"
-                 onclick="map_26ba7e2181974603878c189cfe52fefd.toggleScroll()">
+                 onclick="map_cb0ffbcb4a3442989afcbc4afab3587b.toggleScroll()">
             </img>
             
 </body>
@@ -65,8 +65,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_26ba7e2181974603878c189cfe52fefd = L.map(
-                                  'map_26ba7e2181974603878c189cfe52fefd',
+            var map_cb0ffbcb4a3442989afcbc4afab3587b = L.map(
+                                  'map_cb0ffbcb4a3442989afcbc4afab3587b',
                                   {center: [45.0,3.0],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -77,7 +77,7 @@
             
         
     
-            var tile_layer_57d494bb970c4072870940ff49666977 = L.tileLayer(
+            var tile_layer_5ed6106996c642ebae13056312322a9c = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -88,13 +88,13 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_26ba7e2181974603878c189cfe52fefd);
+                ).addTo(map_cb0ffbcb4a3442989afcbc4afab3587b);
 
         
     
-                    map_26ba7e2181974603878c189cfe52fefd.scrollEnabled = true;
+                    map_cb0ffbcb4a3442989afcbc4afab3587b.scrollEnabled = true;
 
-                    map_26ba7e2181974603878c189cfe52fefd.toggleScroll = function() {
+                    map_cb0ffbcb4a3442989afcbc4afab3587b.toggleScroll = function() {
                         if (this.scrollEnabled) {
                             this.scrollEnabled = false;
                             this.scrollWheelZoom.disable();
@@ -105,6 +105,6 @@
                             }
                         };
 
-                    map_26ba7e2181974603878c189cfe52fefd.toggleScroll();
+                    map_cb0ffbcb4a3442989afcbc4afab3587b.toggleScroll();
             
 </script>

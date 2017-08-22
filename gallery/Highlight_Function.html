@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_c9627f172fef4cfab50371cb6fb4afc9 {
+            <style> #map_6a8106578fbf408f9d3b2a652eaca5e2 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_c9627f172fef4cfab50371cb6fb4afc9" ></div>
+            <div class="folium-map" id="map_6a8106578fbf408f9d3b2a652eaca5e2" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_c9627f172fef4cfab50371cb6fb4afc9 = L.map(
-                                  'map_c9627f172fef4cfab50371cb6fb4afc9',
+            var map_6a8106578fbf408f9d3b2a652eaca5e2 = L.map(
+                                  'map_6a8106578fbf408f9d3b2a652eaca5e2',
                                   {center: [40.0,10.0],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -52,10 +52,10 @@
                                   worldCopyJump: false,
                                   crs: L.CRS.EPSG3857
                                  });
-            L.control.scale().addTo(map_c9627f172fef4cfab50371cb6fb4afc9);
+            L.control.scale().addTo(map_6a8106578fbf408f9d3b2a652eaca5e2);
         
     
-            var tile_layer_17b16931b10d421c88575951529fb77d = L.tileLayer(
+            var tile_layer_32cd3304104c4830b9c748e24ce8b554 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,25 +66,25 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_c9627f172fef4cfab50371cb6fb4afc9);
+                ).addTo(map_6a8106578fbf408f9d3b2a652eaca5e2);
 
         
     
 
             
-                geo_json_40c430971b7741af9c87673ce6960a68_onEachFeature = function onEachFeature(feature, layer) {
+                geo_json_ae687e92cb374cdfa1d0222048dfec27_onEachFeature = function onEachFeature(feature, layer) {
                     layer.on({
                         mouseout: function(e) {
                             e.target.setStyle(e.target.feature.properties.style);},
                         mouseover: function(e) {
                             e.target.setStyle(e.target.feature.properties.highlight);},
                         click: function(e) {
-                            map_c9627f172fef4cfab50371cb6fb4afc9.fitBounds(e.target.getBounds());}
+                            map_6a8106578fbf408f9d3b2a652eaca5e2.fitBounds(e.target.getBounds());}
                         });
                 };
             
 
-                var geo_json_40c430971b7741af9c87673ce6960a68 = L.geoJson(
+                var geo_json_ae687e92cb374cdfa1d0222048dfec27 = L.geoJson(
                     {"features": [{"geometry": {"coordinates": [[3.961389, 43.583333], [3.968056, 43.580833], [3.974722, 43.578333], [3.986389, 43.575278], [3.998333, 43.5725], [4.163333, 43.530556], [4.269167, 43.503889], [4.398889, 43.471111], [4.540278, 43.435278], [4.716944, 43.390556], [4.917222, 43.34], [4.928889, 43.336944], [5.159722, 43.276667], [5.333056, 43.231667], [5.729722, 43.229167], [5.828889, 43.228611], [6.023889, 43.226667], [6.601944, 43.219444], [6.841667, 43.346111], [6.893333, 43.373333], [7.3625, 43.327778], [7.621389, 43.301944], [8.303056, 43.170833], [8.434722, 43.145556], [8.626944, 43.118333], [8.759167, 43.099722], [9.059444, 43.057222], [9.083333, 43.053889], [9.395556, 42.978333], [9.488333, 42.955833], [9.603889, 42.927778], [9.574444, 42.847222], [9.568056, 42.829444], [9.542222, 42.758889], [9.526111, 42.714722], [9.513333, 42.679444], [9.506944, 42.661944], [9.474722, 42.573611], [9.484722, 42.55]], "type": "LineString"}, "properties": {"highlight": {"color": "green", "dashArray": "5, 5", "fillColor": "#ffaf00", "weight": 3}, "style": {"color": "blue", "dashArray": "5, 5", "fillColor": "#ffaf00", "weight": 1.5}}, "type": "Feature"}], "type": "FeatureCollection"}
                     
                         , {
@@ -92,42 +92,42 @@
 
                         
                             
-                            onEachFeature: geo_json_40c430971b7741af9c87673ce6960a68_onEachFeature
+                            onEachFeature: geo_json_ae687e92cb374cdfa1d0222048dfec27_onEachFeature
                         
                         }
                     
-                    ).addTo(map_c9627f172fef4cfab50371cb6fb4afc9);
-                geo_json_40c430971b7741af9c87673ce6960a68.setStyle(function(feature) {return feature.properties.style;});
+                    ).addTo(map_6a8106578fbf408f9d3b2a652eaca5e2);
+                geo_json_ae687e92cb374cdfa1d0222048dfec27.setStyle(function(feature) {return feature.properties.style;});
 
             
     
-            var popup_6b88b420dbdc411ba1324eb00b1fbade = L.popup({maxWidth: '300'});
+            var popup_0761aae580ed4638ae29ae401ba6f589 = L.popup({maxWidth: '300'});
 
             
-                var html_d22994a1416a43488ad0c038c15cd70d = $('<div id="html_d22994a1416a43488ad0c038c15cd70d" style="width: 100.0%; height: 100.0%;">Place_MontpellierMediterranee_Airport Place_BastiaPoretta_Airport</div>')[0];
-                popup_6b88b420dbdc411ba1324eb00b1fbade.setContent(html_d22994a1416a43488ad0c038c15cd70d);
+                var html_b69c746ecfba4c628ec4d399a6f42cd0 = $('<div id="html_b69c746ecfba4c628ec4d399a6f42cd0" style="width: 100.0%; height: 100.0%;">Place_MontpellierMediterranee_Airport Place_BastiaPoretta_Airport</div>')[0];
+                popup_0761aae580ed4638ae29ae401ba6f589.setContent(html_b69c746ecfba4c628ec4d399a6f42cd0);
             
 
-            geo_json_40c430971b7741af9c87673ce6960a68.bindPopup(popup_6b88b420dbdc411ba1324eb00b1fbade);
+            geo_json_ae687e92cb374cdfa1d0222048dfec27.bindPopup(popup_0761aae580ed4638ae29ae401ba6f589);
 
             
         
     
 
             
-                geo_json_373c0a98bb0640ffa1dabe553e27c7d3_onEachFeature = function onEachFeature(feature, layer) {
+                geo_json_18efd4d7f92143568bfd7bdacae9954b_onEachFeature = function onEachFeature(feature, layer) {
                     layer.on({
                         mouseout: function(e) {
                             e.target.setStyle(e.target.feature.properties.style);},
                         mouseover: function(e) {
                             e.target.setStyle(e.target.feature.properties.highlight);},
                         click: function(e) {
-                            map_c9627f172fef4cfab50371cb6fb4afc9.fitBounds(e.target.getBounds());}
+                            map_6a8106578fbf408f9d3b2a652eaca5e2.fitBounds(e.target.getBounds());}
                         });
                 };
             
 
-                var geo_json_373c0a98bb0640ffa1dabe553e27c7d3 = L.geoJson(
+                var geo_json_18efd4d7f92143568bfd7bdacae9954b = L.geoJson(
                     {"features": [{"geometry": {"coordinates": [[-2.719167, 51.382778], [-2.736111, 51.382778], [-2.787222, 51.382222], [-2.838333, 51.381944], [-2.866389, 51.366111], [-2.894722, 51.350278], [-2.998056, 51.2925], [-3.359722, 51.178611], [-3.362778, 51.161111], [-3.371944, 51.108889], [-3.384167, 51.039167], [-3.388611, 51.013056], [-3.398056, 50.957778], [-3.416944, 50.8475], [-3.423889, 50.809167], [-3.431944, 50.761667], [-3.448333, 50.666667], [-3.4525, 50.641389], [-3.463889, 50.574167], [-3.473333, 50.518611], [-3.493611, 50.398611], [-3.495556, 50.362778], [-3.505278, 50.184167], [-3.517222, 49.960556], [-3.529444, 49.737222], [-3.558333, 49.658611], [-3.638611, 49.44], [-3.728333, 49.195278], [-3.783056, 49.046944], [-3.808611, 48.976944], [-4.061667, 48.301944], [-4.184722, 47.957222], [-4.3125, 47.829444], [-4.524722, 47.591389], [-4.990556, 47.079167], [-5.408056, 46.612778], [-6.919722, 44.835278], [-7.012778, 44.698056], [-7.143889, 44.504444], [-8.926667, 41.872778], [-9.016111, 41.667778], [-9.161389, 41.334444], [-10.234444, 38.873333], [-11.448333, 35.966667], [-12.911667, 34.261111], [-13.836111, 33.149444], [-15.301667, 31.300833], [-15.850278, 30.433889], [-16.372778, 29.591389], [-16.990556, 28.928056], [-17.023056, 28.893333], [-17.094444, 28.816389], [-17.211667, 28.690833], [-17.263611, 28.635], [-17.315556, 28.579167], [-17.374167, 28.516389], [-17.439167, 28.446389], [-17.452222, 28.4325], [-17.375278, 28.389444], [-17.29, 28.341667], [-17.196111, 28.289167], [-17.170556, 28.274722], [-17.115, 28.234444], [-17.027778, 28.170833], [-16.877222, 28.061389], [-16.773056, 28.028889], [-16.687778, 28.0025], [-16.676389, 28.006667], [-16.647222, 28.017222], [-16.622222, 28.026389], [-16.604167, 28.033056], [-16.5725, 28.044444]], "type": "LineString"}, "properties": {"highlight": {"color": "green", "dashArray": "5, 5", "fillColor": "#ffaf00", "weight": 3}, "style": {"color": "blue", "dashArray": "5, 5", "fillColor": "#ffaf00", "weight": 1.5}}, "type": "Feature"}], "type": "FeatureCollection"}
                     
                         , {
@@ -135,42 +135,42 @@
 
                         
                             
-                            onEachFeature: geo_json_373c0a98bb0640ffa1dabe553e27c7d3_onEachFeature
+                            onEachFeature: geo_json_18efd4d7f92143568bfd7bdacae9954b_onEachFeature
                         
                         }
                     
-                    ).addTo(map_c9627f172fef4cfab50371cb6fb4afc9);
-                geo_json_373c0a98bb0640ffa1dabe553e27c7d3.setStyle(function(feature) {return feature.properties.style;});
+                    ).addTo(map_6a8106578fbf408f9d3b2a652eaca5e2);
+                geo_json_18efd4d7f92143568bfd7bdacae9954b.setStyle(function(feature) {return feature.properties.style;});
 
             
     
-            var popup_23ec5c5f9e4643bc96b6b52f7e24da66 = L.popup({maxWidth: '300'});
+            var popup_d78dfba5e1144c90ae0653b6b6fc6726 = L.popup({maxWidth: '300'});
 
             
-                var html_0a172f9fa56442c9b6e14cfcb73b13e6 = $('<div id="html_0a172f9fa56442c9b6e14cfcb73b13e6" style="width: 100.0%; height: 100.0%;">Place_Bristol___Lulsgate Place_TenerifeSur_ReinaSofia_Airport</div>')[0];
-                popup_23ec5c5f9e4643bc96b6b52f7e24da66.setContent(html_0a172f9fa56442c9b6e14cfcb73b13e6);
+                var html_79d5f548d61147df8be41d711aed2bb2 = $('<div id="html_79d5f548d61147df8be41d711aed2bb2" style="width: 100.0%; height: 100.0%;">Place_Bristol___Lulsgate Place_TenerifeSur_ReinaSofia_Airport</div>')[0];
+                popup_d78dfba5e1144c90ae0653b6b6fc6726.setContent(html_79d5f548d61147df8be41d711aed2bb2);
             
 
-            geo_json_373c0a98bb0640ffa1dabe553e27c7d3.bindPopup(popup_23ec5c5f9e4643bc96b6b52f7e24da66);
+            geo_json_18efd4d7f92143568bfd7bdacae9954b.bindPopup(popup_d78dfba5e1144c90ae0653b6b6fc6726);
 
             
         
     
 
             
-                geo_json_af7cdfdf5dbd4c28ad6b329256316395_onEachFeature = function onEachFeature(feature, layer) {
+                geo_json_6deaa1d50c0d4e2d9ba57fdf4068121c_onEachFeature = function onEachFeature(feature, layer) {
                     layer.on({
                         mouseout: function(e) {
                             e.target.setStyle(e.target.feature.properties.style);},
                         mouseover: function(e) {
                             e.target.setStyle(e.target.feature.properties.highlight);},
                         click: function(e) {
-                            map_c9627f172fef4cfab50371cb6fb4afc9.fitBounds(e.target.getBounds());}
+                            map_6a8106578fbf408f9d3b2a652eaca5e2.fitBounds(e.target.getBounds());}
                         });
                 };
             
 
-                var geo_json_af7cdfdf5dbd4c28ad6b329256316395 = L.geoJson(
+                var geo_json_6deaa1d50c0d4e2d9ba57fdf4068121c = L.geoJson(
                     {"features": [{"geometry": {"coordinates": [[-0.481667, 39.489444], [-0.492222, 39.493611], [-0.534167, 39.510556], [-0.576389, 39.527222], [-0.566111, 39.531389], [-0.504722, 39.555833], [-0.453611, 39.576111], [-0.381944, 39.604722], [-0.340833, 39.621111], [-0.228333, 39.666111], [-0.207778, 39.674167], [-0.045278, 39.801944], [-0.004722, 39.833889], [0.046944, 39.870833], [0.15, 39.944444], [0.270278, 40.030556], [0.407778, 40.128889], [0.5625, 40.239722], [0.588333, 40.258056], [0.888333, 40.469167], [1.003056, 40.549722], [1.062222, 40.590833], [1.231667, 40.708611], [1.258056, 40.726944], [1.451944, 40.860833], [1.505833, 40.897778], [1.730278, 41.051389], [1.853056, 41.134722], [2.107778, 41.307222], [3.187222, 41.494444], [3.488611, 41.544722], [3.860278, 41.605556], [4.666667, 41.733333], [5.013333, 41.81], [5.396389, 42.157778], [5.709722, 42.438333], [6.180278, 42.853611], [6.601944, 43.219444], [6.841667, 43.346111], [6.893333, 43.373333], [7.23, 43.549167], [7.371111, 43.622222], [7.632778, 43.756944], [7.653056, 43.7675], [7.755278, 43.819444], [8.221111, 44.056111], [8.803611, 44.134722], [9.054722, 44.194722], [9.594167, 44.321667], [10.1625, 44.484167], [10.822222, 44.672778], [12.281389, 45.071111], [12.649722, 45.032778], [12.801944, 45.016944], [13.091389, 44.985833], [13.918056, 44.8925], [14.876111, 44.707222], [15.533056, 44.575], [16.143333, 44.448333], [16.305556, 44.413889], [16.593889, 44.351944], [16.816389, 44.303611], [17.661389, 44.115833], [19.105, 44.596389], [19.223889, 44.605833], [19.362778, 44.616944], [20.776667, 44.722778], [21.169444, 44.748889], [21.533333, 44.771667], [22.610556, 44.778611], [23.448889, 44.772222], [23.5125, 44.771667], [23.652222, 44.770833], [23.880833, 44.768889], [23.9825, 44.768333], [24.211111, 44.766389], [24.490556, 44.764444], [24.643056, 44.763333], [24.668333, 44.763056], [24.782222, 44.760833], [25.161389, 44.753889], [25.423889, 44.6325], [25.55, 44.574167], [25.623611, 44.540278], [25.698333, 44.545278], [25.823056, 44.553611], [25.922778, 44.560278], [26.085, 44.571111]], "type": "LineString"}, "properties": {"highlight": {"color": "green", "dashArray": "5, 5", "fillColor": "#ffaf00", "weight": 3}, "style": {"color": "blue", "dashArray": "5, 5", "fillColor": "#ffaf00", "weight": 1.5}}, "type": "Feature"}], "type": "FeatureCollection"}
                     
                         , {
@@ -178,37 +178,37 @@
 
                         
                             
-                            onEachFeature: geo_json_af7cdfdf5dbd4c28ad6b329256316395_onEachFeature
+                            onEachFeature: geo_json_6deaa1d50c0d4e2d9ba57fdf4068121c_onEachFeature
                         
                         }
                     
-                    ).addTo(map_c9627f172fef4cfab50371cb6fb4afc9);
-                geo_json_af7cdfdf5dbd4c28ad6b329256316395.setStyle(function(feature) {return feature.properties.style;});
+                    ).addTo(map_6a8106578fbf408f9d3b2a652eaca5e2);
+                geo_json_6deaa1d50c0d4e2d9ba57fdf4068121c.setStyle(function(feature) {return feature.properties.style;});
 
             
     
-            var popup_68f9dccefffb4c2484cdeeb4045f3b54 = L.popup({maxWidth: '300'});
+            var popup_404c417556e44dde944d036d7f3a58fb = L.popup({maxWidth: '300'});
 
             
-                var html_7b70562049314a3a8d9c4513632169ba = $('<div id="html_7b70562049314a3a8d9c4513632169ba" style="width: 100.0%; height: 100.0%;">Place_Valencia_Manises_Airport Place_Bucuresti_HenriCoanda_Airport</div>')[0];
-                popup_68f9dccefffb4c2484cdeeb4045f3b54.setContent(html_7b70562049314a3a8d9c4513632169ba);
+                var html_d1186d8d21a94dad8964d18da108eb81 = $('<div id="html_d1186d8d21a94dad8964d18da108eb81" style="width: 100.0%; height: 100.0%;">Place_Valencia_Manises_Airport Place_Bucuresti_HenriCoanda_Airport</div>')[0];
+                popup_404c417556e44dde944d036d7f3a58fb.setContent(html_d1186d8d21a94dad8964d18da108eb81);
             
 
-            geo_json_af7cdfdf5dbd4c28ad6b329256316395.bindPopup(popup_68f9dccefffb4c2484cdeeb4045f3b54);
+            geo_json_6deaa1d50c0d4e2d9ba57fdf4068121c.bindPopup(popup_404c417556e44dde944d036d7f3a58fb);
 
             
         
     
-            var layer_control_1bc7be3e99bd4e4eb6d27fe4d3f24d00 = {
-                base_layers : { "openstreetmap" : tile_layer_17b16931b10d421c88575951529fb77d,"Place_MontpellierMediterranee_AirportPlace_BastiaPoretta_Airport" : geo_json_40c430971b7741af9c87673ce6960a68,"Place_Bristol___LulsgatePlace_TenerifeSur_ReinaSofia_Airport" : geo_json_373c0a98bb0640ffa1dabe553e27c7d3,"Place_Valencia_Manises_AirportPlace_Bucuresti_HenriCoanda_Airport" : geo_json_af7cdfdf5dbd4c28ad6b329256316395, },
+            var layer_control_7f06cc3e5ded4738bc5eeebe255cfdb3 = {
+                base_layers : { "openstreetmap" : tile_layer_32cd3304104c4830b9c748e24ce8b554,"Place_MontpellierMediterranee_AirportPlace_BastiaPoretta_Airport" : geo_json_ae687e92cb374cdfa1d0222048dfec27,"Place_Bristol___LulsgatePlace_TenerifeSur_ReinaSofia_Airport" : geo_json_18efd4d7f92143568bfd7bdacae9954b,"Place_Valencia_Manises_AirportPlace_Bucuresti_HenriCoanda_Airport" : geo_json_6deaa1d50c0d4e2d9ba57fdf4068121c, },
                 overlays : {  }
                 };
             L.control.layers(
-                layer_control_1bc7be3e99bd4e4eb6d27fe4d3f24d00.base_layers,
-                layer_control_1bc7be3e99bd4e4eb6d27fe4d3f24d00.overlays,
+                layer_control_7f06cc3e5ded4738bc5eeebe255cfdb3.base_layers,
+                layer_control_7f06cc3e5ded4738bc5eeebe255cfdb3.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_c9627f172fef4cfab50371cb6fb4afc9);
+                }).addTo(map_6a8106578fbf408f9d3b2a652eaca5e2);
         
 </script>

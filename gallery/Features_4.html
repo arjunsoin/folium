@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_69f8f78a8f644f82b1ffa8e68932e7e2 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_5d65b34b25094f8c909e1b0027b641f0 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/1.4.3/vega.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_69f8f78a8f644f82b1ffa8e68932e7e2" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_69f8f78a8f644f82b1ffa8e68932e7e2 = L.map(
+                                  'map_69f8f78a8f644f82b1ffa8e68932e7e2',
+                                  {center: [0.0,0.0],
+                                  zoom: 1,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_911db84a048640bfab1a69dc678f4738 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false,
+                    subdomains: 'abc'
+                    }
+                ).addTo(map_69f8f78a8f644f82b1ffa8e68932e7e2);
+
+        
+    
+
+            var marker_a21a5ab3782d4744bd622ef5d0813691 = L.marker(
+                [0,0],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_69f8f78a8f644f82b1ffa8e68932e7e2);
+            
+    function vega_parse(spec, div) {
+            vg.parse.spec(spec, function(chart) { chart({el:div}).update(); });}
+    
+            var popup_f4c5d23256d94f5aacc7de38efd182d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_42a02365fc6d4cc08475bb1b4583d08f = $('<div id="html_42a02365fc6d4cc08475bb1b4583d08f" style="width: 100.0%; height: 100.0%;">Hello</div>')[0];
+                popup_f4c5d23256d94f5aacc7de38efd182d0.setContent(html_42a02365fc6d4cc08475bb1b4583d08f);
+            
+                var vega_5d65b34b25094f8c909e1b0027b641f0 = $('             <div id="vega_5d65b34b25094f8c909e1b0027b641f0"></div>             ')[0];
+                popup_f4c5d23256d94f5aacc7de38efd182d0.setContent(vega_5d65b34b25094f8c909e1b0027b641f0);
+            
+
+            marker_a21a5ab3782d4744bd622ef5d0813691.bindPopup(popup_f4c5d23256d94f5aacc7de38efd182d0);
+
+            
+                
+            vega_parse({"axes": [{"scale": "x", "type": "x"}, {"scale": "y", "type": "y"}], "data": [{"name": "table", "values": [{"col": "y", "idx": 0.5340949390454203, "val": 0.31624526412095544}, {"col": "y", "idx": 0.6855591843791484, "val": 0.08910150037465325}, {"col": "y", "idx": 0.8531103923094439, "val": 0.738719427172868}, {"col": "y", "idx": 0.756869348747972, "val": 0.11357396241265005}, {"col": "y", "idx": 0.48821932467503637, "val": 0.765763055020987}, {"col": "y", "idx": 0.5977633883777698, "val": 0.18550977233991928}, {"col": "y", "idx": 0.23393703337455585, "val": 0.03811479802933637}, {"col": "y", "idx": 0.17475707070073643, "val": 0.1838555079825669}, {"col": "y", "idx": 0.6001413956204462, "val": 0.37487288652039363}, {"col": "y", "idx": 0.5866766305097972, "val": 0.8593130984011877}, {"col": "y", "idx": 0.9598481966256901, "val": 0.8492747758856958}, {"col": "y", "idx": 0.7183690573751186, "val": 0.053648269941171334}, {"col": "y", "idx": 0.807399951928856, "val": 0.6629379841732802}, {"col": "y", "idx": 0.5106891649079932, "val": 0.8349455428367131}, {"col": "y", "idx": 0.5094701251236168, "val": 0.5711587174858702}, {"col": "y", "idx": 0.1627477954430938, "val": 0.49419030061278446}, {"col": "y", "idx": 0.6532379828791849, "val": 0.4397240491847849}, {"col": "y", "idx": 0.3357191890323127, "val": 0.6410281929325382}, {"col": "y", "idx": 0.39901566199635663, "val": 0.06961090613031606}, {"col": "y", "idx": 0.8506011253383015, "val": 0.5242143257892515}, {"col": "y", "idx": 0.8498875700076057, "val": 0.9745263996770369}, {"col": "y", "idx": 0.5892922400623646, "val": 0.3644217669680556}, {"col": "y", "idx": 0.6324088739516166, "val": 0.23614027417846095}, {"col": "y", "idx": 0.3198355501120863, "val": 0.25412644740628265}, {"col": "y", "idx": 0.15341547357833107, "val": 0.9239472972260263}, {"col": "y", "idx": 0.6406991291099321, "val": 0.6933530196235386}, {"col": "y", "idx": 0.1833889242749075, "val": 0.3232084525032233}, {"col": "y", "idx": 0.33219936456660226, "val": 0.9338787001172645}, {"col": "y", "idx": 0.4673509681410102, "val": 0.7239717933243343}, {"col": "y", "idx": 0.925712926494699, "val": 0.530321810962825}, {"col": "y", "idx": 0.6772702201818087, "val": 0.9208446695282436}, {"col": "y", "idx": 0.8052088031019006, "val": 0.3967874699434165}, {"col": "y", "idx": 0.8871522999962307, "val": 0.09430353759014654}, {"col": "y", "idx": 0.30598356771755075, "val": 0.06497077809249374}, {"col": "y", "idx": 0.4449263434187912, "val": 0.6259772971264713}, {"col": "y", "idx": 0.5610272034559377, "val": 0.5051228005851637}, {"col": "y", "idx": 0.5699108587772491, "val": 0.6421435254055239}, {"col": "y", "idx": 0.5168605389855141, "val": 0.50092298913688}, {"col": "y", "idx": 0.21890181940540632, "val": 0.44039578953709757}, {"col": "y", "idx": 0.5571381952915289, "val": 0.5638707157522062}, {"col": "y", "idx": 0.7696416725486901, "val": 0.46699668509873293}, {"col": "y", "idx": 0.9756293183275685, "val": 0.56120625851802}, {"col": "y", "idx": 0.27840968368067787, "val": 0.7671421261734875}, {"col": "y", "idx": 0.5099789039636142, "val": 0.6800114956279436}, {"col": "y", "idx": 0.9994020614502079, "val": 0.07188835983729414}, {"col": "y", "idx": 0.47059208479195747, "val": 0.6015599467128839}, {"col": "y", "idx": 0.03026804125149385, "val": 0.9690099168464008}, {"col": "y", "idx": 0.8731604334189724, "val": 0.41584995934928326}, {"col": "y", "idx": 0.12665093998226185, "val": 0.9193243759700825}, {"col": "y", "idx": 0.47664452303045, "val": 0.48867435618249655}, {"col": "y", "idx": 0.21759890560922301, "val": 0.7938174787315766}, {"col": "y", "idx": 0.7368391162752688, "val": 0.9134187178553581}, {"col": "y", "idx": 0.22657613922267084, "val": 0.007093436080327531}, {"col": "y", "idx": 0.40301124363546637, "val": 0.7461352406767506}, {"col": "y", "idx": 0.1008997616372811, "val": 0.18795462707868138}, {"col": "y", "idx": 0.5002295506332081, "val": 0.12415402688811594}, {"col": "y", "idx": 0.3346903993148118, "val": 0.6544304964659607}, {"col": "y", "idx": 0.8108291444356788, "val": 0.25513877385933714}, {"col": "y", "idx": 0.15623525271791494, "val": 0.6365458224439973}, {"col": "y", "idx": 0.420635777498621, "val": 0.4012558885868234}, {"col": "y", "idx": 0.43838789192818595, "val": 0.20602462928262755}, {"col": "y", "idx": 0.2347909001424049, "val": 0.05096614325600968}, {"col": "y", "idx": 0.5413982552202938, "val": 0.6526392599337595}, {"col": "y", "idx": 0.5513529117233251, "val": 0.3853437739666359}, {"col": "y", "idx": 0.9519901909763586, "val": 0.19916357695071263}, {"col": "y", "idx": 0.4741455076494241, "val": 0.013331710756022686}, {"col": "y", "idx": 0.10769015239186974, "val": 0.6310348999349141}, {"col": "y", "idx": 0.8038689148030249, "val": 0.004858566607324755}, {"col": "y", "idx": 0.42624113816233045, "val": 0.8429675461606081}, {"col": "y", "idx": 0.4073654278655894, "val": 0.7269162563300092}, {"col": "y", "idx": 0.33364969607945283, "val": 0.5680631601679059}, {"col": "y", "idx": 0.33666687993683386, "val": 0.2919879374059735}, {"col": "y", "idx": 0.6030192316855639, "val": 0.6773446180134779}, {"col": "y", "idx": 0.4880950006372131, "val": 0.7654489969964047}, {"col": "y", "idx": 0.6863876001899472, "val": 0.8065361539509593}, {"col": "y", "idx": 0.6002276555477336, "val": 0.6952317498695992}, {"col": "y", "idx": 0.03789761766403121, "val": 0.7239165858379075}, {"col": "y", "idx": 0.787450678065576, "val": 0.1902541213645239}, {"col": "y", "idx": 0.7900245777378794, "val": 0.9314206465379441}, {"col": "y", "idx": 0.8675146354005592, "val": 0.8968260439162007}, {"col": "y", "idx": 0.7769238569347544, "val": 0.6585330559584537}, {"col": "y", "idx": 0.7231510361031601, "val": 0.6824197328336311}, {"col": "y", "idx": 0.35776534893198964, "val": 0.09176465627491925}, {"col": "y", "idx": 0.10220446786690096, "val": 0.41997710690226964}, {"col": "y", "idx": 0.9394059065790382, "val": 0.5431172023358548}, {"col": "y", "idx": 0.28729663068991307, "val": 0.191261414859065}, {"col": "y", "idx": 0.7138871203996935, "val": 0.7970347335489933}, {"col": "y", "idx": 0.9011594921122913, "val": 0.08517382227706938}, {"col": "y", "idx": 0.7046444482100995, "val": 0.7134182370029201}, {"col": "y", "idx": 0.4909398987483887, "val": 0.6336730740113328}, {"col": "y", "idx": 0.6983764098136712, "val": 0.9275973148181753}, {"col": "y", "idx": 0.5183817938907804, "val": 0.7337875441242718}, {"col": "y", "idx": 0.2807961037321518, "val": 0.9367072721784905}, {"col": "y", "idx": 0.41183722422916225, "val": 0.16547800548507086}, {"col": "y", "idx": 0.9523692620634288, "val": 0.3528416108393705}, {"col": "y", "idx": 0.23958159420372716, "val": 0.7138482636606165}, {"col": "y", "idx": 0.7392485373842744, "val": 0.21135440028094088}, {"col": "y", "idx": 0.6737881327784105, "val": 0.6603795977877384}, {"col": "y", "idx": 0.1572326286476562, "val": 0.9111418781235474}, {"col": "y", "idx": 0.17257521162542855, "val": 0.3337880515996442}]}], "height": 100, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "size": {"value": 100}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "data.val", "scale": "y"}}}, "type": "symbol"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "range": "width", "type": "linear"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 200},vega_5d65b34b25094f8c909e1b0027b641f0);
+            
+            
+        
+</script>

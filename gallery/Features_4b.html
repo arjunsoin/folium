@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_afac79e2ea3948d1bc42e98f53a9b4a8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_lite_0ecf296c6b58463fb9ce181c6621dbbe {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/2.6.5/vega.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/1.3.1/vega-lite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/2.2.0/vega-embed.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_afac79e2ea3948d1bc42e98f53a9b4a8" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_afac79e2ea3948d1bc42e98f53a9b4a8 = L.map(
+                                  'map_afac79e2ea3948d1bc42e98f53a9b4a8',
+                                  {center: [0.0,0.0],
+                                  zoom: 1,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_8b671a40eebd4d0d956dfa3e8a64709d = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false,
+                    subdomains: 'abc'
+                    }
+                ).addTo(map_afac79e2ea3948d1bc42e98f53a9b4a8);
+
+        
+    
+
+            var marker_e6144b5690fa451884e48d38ecaf4ff3 = L.marker(
+                [0,0],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_afac79e2ea3948d1bc42e98f53a9b4a8);
+            
+    
+            var popup_101ed3a9251b4b1e815d22a2d8022b83 = L.popup({maxWidth: '300'});
+
+            
+                var html_d1a08ca1946e4519bfdf77e4af3c8133 = $('<div id="html_d1a08ca1946e4519bfdf77e4af3c8133" style="width: 100.0%; height: 100.0%;">Hello</div>')[0];
+                popup_101ed3a9251b4b1e815d22a2d8022b83.setContent(html_d1a08ca1946e4519bfdf77e4af3c8133);
+            
+                var vega_lite_0ecf296c6b58463fb9ce181c6621dbbe = $('             <div id="vega_lite_0ecf296c6b58463fb9ce181c6621dbbe"></div>             ')[0];
+                popup_101ed3a9251b4b1e815d22a2d8022b83.setContent(vega_lite_0ecf296c6b58463fb9ce181c6621dbbe);
+            
+
+            marker_e6144b5690fa451884e48d38ecaf4ff3.bindPopup(popup_101ed3a9251b4b1e815d22a2d8022b83);
+
+            
+                
+            var embedSpec = {
+                mode: "vega-lite",
+                spec: {"data": {"values": [{"x": 0.34980083534391426, "y": 0.15388594599334326}, {"x": 0.47500433624226457, "y": 0.038939057767372054}, {"x": 0.9525260184390751, "y": 0.43872589027001696}, {"x": 0.6489848292206504, "y": 0.9288823286867263}, {"x": 0.6167690629581174, "y": 0.7564923262718908}, {"x": 0.2397420014543613, "y": 0.6267429667459998}, {"x": 0.6555094271457905, "y": 0.5044618883893467}, {"x": 0.9087424594344197, "y": 0.6076450136103948}, {"x": 0.8234854859920204, "y": 0.03808499678733834}, {"x": 0.4628437262498819, "y": 0.2502195723827908}, {"x": 0.925345348225038, "y": 0.10131856014605456}, {"x": 0.28699127407338465, "y": 0.7049969713421707}, {"x": 0.6580765109659708, "y": 0.08707173573347848}, {"x": 0.582785117220367, "y": 0.7684229720062636}, {"x": 0.9876841913859868, "y": 0.8895608664619413}, {"x": 0.11821568763121781, "y": 0.05367084583459669}, {"x": 0.9468045378116154, "y": 0.5695433540072234}, {"x": 0.37562713806908654, "y": 0.19670914783499793}, {"x": 0.7818388625541387, "y": 0.5890778512584995}, {"x": 0.20933701755257716, "y": 0.25585669470733297}, {"x": 0.9828715423312039, "y": 0.11027999542931188}, {"x": 0.7711068422566558, "y": 0.906418332011093}, {"x": 0.1942081902945083, "y": 0.2570273807898549}, {"x": 0.0339256841041109, "y": 0.754010360256111}, {"x": 0.3426507767696503, "y": 0.09065012538930506}, {"x": 0.5157137810160416, "y": 0.5100710848948753}, {"x": 0.9274501765493633, "y": 0.3006001507132616}, {"x": 0.9347137669229242, "y": 0.6179081707862045}, {"x": 0.8003759173743454, "y": 0.12362771159101937}, {"x": 0.7770975222660284, "y": 0.7936723461927162}, {"x": 0.4242615023629762, "y": 0.6517246991094797}, {"x": 0.14699886042444632, "y": 0.8245302121134799}, {"x": 0.11451950705564873, "y": 0.4111489476686938}, {"x": 0.6746485311483758, "y": 0.7713041432824145}, {"x": 0.6468151650671838, "y": 0.071578206529336}, {"x": 0.6103766073932915, "y": 0.029333904982849934}, {"x": 0.3354278422461895, "y": 0.5922678553678091}, {"x": 0.9602971753484966, "y": 0.3240832754435612}, {"x": 0.8849889252037187, "y": 0.19491504909867796}, {"x": 0.7794414001656842, "y": 0.7219993172203694}, {"x": 0.8267292755496038, "y": 0.4150707132270679}, {"x": 0.032785695818546956, "y": 0.4509648571424878}, {"x": 0.710937569582378, "y": 0.5404616420717455}, {"x": 0.8752631967227646, "y": 0.7900817344718625}, {"x": 0.20675315956465268, "y": 0.735329944190501}, {"x": 0.4807325700319801, "y": 0.8364062539781388}, {"x": 0.7473768725067844, "y": 0.7893563242746287}, {"x": 0.5430715306058691, "y": 0.28310915067229836}, {"x": 0.16796128670778787, "y": 0.8999901310291284}, {"x": 0.26432123874288704, "y": 0.6278795565957316}, {"x": 0.09759753205869759, "y": 0.8800188616360569}, {"x": 0.5467788596597605, "y": 0.33927409168855716}, {"x": 0.39660396872721837, "y": 0.7593146468636482}, {"x": 0.943523358571516, "y": 0.2866634454279319}, {"x": 0.3004485693569633, "y": 0.19387541853707113}, {"x": 0.5618283440949163, "y": 0.3834181152121736}, {"x": 0.09287388226365445, "y": 0.8479080749566295}, {"x": 0.9587996248020412, "y": 0.7201803433048339}, {"x": 0.3702880654309547, "y": 0.12000357066958367}, {"x": 0.4851846729148186, "y": 0.8254780904006699}, {"x": 0.04020262844373246, "y": 0.013587791273393934}, {"x": 0.7417000800028691, "y": 0.5886596306309894}, {"x": 0.7413971418267029, "y": 0.6565106619719725}, {"x": 0.07507834351979426, "y": 0.181746059369018}, {"x": 0.5277533679722877, "y": 0.17263429894307447}, {"x": 0.20882566679378034, "y": 0.8300747550041634}, {"x": 0.7090577802076208, "y": 0.7279501418763074}, {"x": 0.10851437914939932, "y": 0.11300455588584857}, {"x": 0.026877760634140935, "y": 0.31601591177171595}, {"x": 0.22554419505111178, "y": 0.1806990506137951}, {"x": 0.7255504893351777, "y": 0.3748266184042043}, {"x": 0.19787857714578205, "y": 0.06677528942250088}, {"x": 0.8312211662140712, "y": 0.22794858848279453}, {"x": 0.7088224922087155, "y": 0.09425174241623169}, {"x": 0.6414098679520648, "y": 0.3120883693704807}, {"x": 0.37453419848777625, "y": 0.7747133373137086}, {"x": 0.8752504456530306, "y": 0.12151808855797264}, {"x": 0.7984972232561629, "y": 0.38839881712818036}, {"x": 0.7697821668998504, "y": 0.7953788750678774}, {"x": 0.9059361415985501, "y": 0.6990332069673225}, {"x": 0.7241477439270871, "y": 0.16336846001175787}, {"x": 0.6465286717152667, "y": 0.35688338017056953}, {"x": 0.8801506754113666, "y": 0.06897513444745462}, {"x": 0.8430198648799642, "y": 0.746221233867623}, {"x": 0.06316569951047157, "y": 0.8128507007261188}, {"x": 0.06073790049617378, "y": 0.48640079121018387}, {"x": 0.27436965999564933, "y": 0.6525260666035434}, {"x": 0.09847691787188406, "y": 0.844208506610986}, {"x": 0.277251322911239, "y": 0.4215206666158816}, {"x": 0.5179685702306028, "y": 0.7669980416500083}, {"x": 0.844783810115946, "y": 0.9007446184281656}, {"x": 0.9947380962623087, "y": 0.5142395683964965}, {"x": 0.8695701990055195, "y": 0.2537187913233012}, {"x": 0.042368189430594505, "y": 0.02420533176395112}, {"x": 0.5828202008018032, "y": 0.3364204934606766}, {"x": 0.17575249016542127, "y": 0.24343346717724934}, {"x": 0.3532129858573222, "y": 0.09226008409852604}, {"x": 0.9114184235178986, "y": 0.21259174884900056}, {"x": 0.37803010131730674, "y": 0.8143181152033173}, {"x": 0.25049645434363743, "y": 0.2740984456807736}]}, "encoding": {"x": {"field": "x", "type": "quantitative"}, "y": {"field": "y", "type": "quantitative"}}, "height": 100.0, "mark": "circle", "width": 200.0}
+            };
+            vg.embed(vega_lite_0ecf296c6b58463fb9ce181c6621dbbe, embedSpec, function(error, result) {});
+        
+            
+        
+</script>
