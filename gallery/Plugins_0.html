@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_1842337f1b5a4f5297b807b661ea2df6 {
+            <style> #map_0e32087d5bdb4b1d955fcafc3c792982 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -30,7 +30,7 @@
         
     
                 <style>
-                    #scroll_zoom_toggler_7d7097e04c8a4478a23c8adf72e1bf9c {
+                    #scroll_zoom_toggler_738eb27822b94c38b8d44ef89aaa1a77 {
                         position:absolute;
                         width:35px;
                         bottom:10px;
@@ -46,13 +46,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1842337f1b5a4f5297b807b661ea2df6" ></div>
+            <div class="folium-map" id="map_0e32087d5bdb4b1d955fcafc3c792982" ></div>
         
     
-            <img id="scroll_zoom_toggler_7d7097e04c8a4478a23c8adf72e1bf9c" alt="scroll"
+            <img id="scroll_zoom_toggler_738eb27822b94c38b8d44ef89aaa1a77" alt="scroll"
                  src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/png/512/arrow-move.png"
                  style="z-index: 999999"
-                 onclick="map_1842337f1b5a4f5297b807b661ea2df6.toggleScroll()">
+                 onclick="map_0e32087d5bdb4b1d955fcafc3c792982.toggleScroll()">
             </img>
             
 </body>
@@ -65,8 +65,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_1842337f1b5a4f5297b807b661ea2df6 = L.map(
-                                  'map_1842337f1b5a4f5297b807b661ea2df6',
+            var map_0e32087d5bdb4b1d955fcafc3c792982 = L.map(
+                                  'map_0e32087d5bdb4b1d955fcafc3c792982',
                                   {center: [45.0,3.0],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -77,7 +77,7 @@
             
         
     
-            var tile_layer_370f59fde5c94711ac0d3186b4fb8e40 = L.tileLayer(
+            var tile_layer_44c4edc74eb742d1adf48b3168d7a029 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -88,13 +88,13 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_1842337f1b5a4f5297b807b661ea2df6);
+                ).addTo(map_0e32087d5bdb4b1d955fcafc3c792982);
 
         
     
-                    map_1842337f1b5a4f5297b807b661ea2df6.scrollEnabled = true;
+                    map_0e32087d5bdb4b1d955fcafc3c792982.scrollEnabled = true;
 
-                    map_1842337f1b5a4f5297b807b661ea2df6.toggleScroll = function() {
+                    map_0e32087d5bdb4b1d955fcafc3c792982.toggleScroll = function() {
                         if (this.scrollEnabled) {
                             this.scrollEnabled = false;
                             this.scrollWheelZoom.disable();
@@ -105,6 +105,6 @@
                             }
                         };
 
-                    map_1842337f1b5a4f5297b807b661ea2df6.toggleScroll();
+                    map_0e32087d5bdb4b1d955fcafc3c792982.toggleScroll();
             
 </script>

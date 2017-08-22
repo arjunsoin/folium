@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_6f26009403214656b8e48ab26e22b451 {
+            <style> #map_ebef4ad4b2164a4dbf0ad1618d7138d0 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -37,7 +37,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_6f26009403214656b8e48ab26e22b451" ></div>
+            <div class="folium-map" id="map_ebef4ad4b2164a4dbf0ad1618d7138d0" ></div>
         
 </body>
 <script>    
@@ -49,8 +49,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_6f26009403214656b8e48ab26e22b451 = L.map(
-                                  'map_6f26009403214656b8e48ab26e22b451',
+            var map_ebef4ad4b2164a4dbf0ad1618d7138d0 = L.map(
+                                  'map_ebef4ad4b2164a4dbf0ad1618d7138d0',
                                   {center: [35.68159659061569,139.76451516151428],
                                   zoom: 16,
                                   maxBounds: bounds,
@@ -61,7 +61,7 @@
             
         
     
-            var tile_layer_992e1efa5d3943f0ab9fefce8d6c5fb8 = L.tileLayer(
+            var tile_layer_18ff28445a7b4e559254f1b6be34db78 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -72,25 +72,25 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_6f26009403214656b8e48ab26e22b451);
+                ).addTo(map_ebef4ad4b2164a4dbf0ad1618d7138d0);
 
         
     
-            map_6f26009403214656b8e48ab26e22b451.timeDimension = L.timeDimension({period:"PT1M"});
-            map_6f26009403214656b8e48ab26e22b451.timeDimensionControl = L.control.timeDimension({
+            map_ebef4ad4b2164a4dbf0ad1618d7138d0.timeDimension = L.timeDimension({period:"PT1M"});
+            map_ebef4ad4b2164a4dbf0ad1618d7138d0.timeDimensionControl = L.control.timeDimension({
                 position: 'bottomleft',
                 autoPlay: true,
                 playerOptions: {
                     transitionTime: 200,
                     loop: true}
                     });
-            map_6f26009403214656b8e48ab26e22b451.addControl(map_6f26009403214656b8e48ab26e22b451.timeDimensionControl);
+            map_ebef4ad4b2164a4dbf0ad1618d7138d0.addControl(map_ebef4ad4b2164a4dbf0ad1618d7138d0.timeDimensionControl);
 
-            var timestamped_geo_json_9f909a2bf40348c3a7cecc15d93b7528 = L.timeDimension.layer.geoJson(
+            var timestamped_geo_json_1f21156f15ce4a3cb3d384f6c30d8220 = L.timeDimension.layer.geoJson(
                 L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[139.76451516151428, 35.68159659061569], [139.75964426994324, 35.682590062684206]]}, "properties": {"times": ["2017-06-02T00:00:00", "2017-06-02T00:10:00"], "style": {"color": "red", "weight": 5}}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[139.75964426994324, 35.682590062684206], [139.7575843334198, 35.679505030038506]]}, "properties": {"times": ["2017-06-02T00:10:00", "2017-06-02T00:20:00"], "style": {"color": "blue", "weight": 5}}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[139.7575843334198, 35.679505030038506], [139.76337790489197, 35.678040905014065]]}, "properties": {"times": ["2017-06-02T00:20:00", "2017-06-02T00:30:00"], "style": {"color": "green", "weight": 15}}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[139.76337790489197, 35.678040905014065], [139.76451516151428, 35.68159659061569]]}, "properties": {"times": ["2017-06-02T00:30:00", "2017-06-02T00:40:00"], "style": {"color": "#FFFFFF", "weight": 5}}}]}, {'style': function (feature) {
                     return feature.properties.style
                 }}),
                 {updateTimeDimension: true,addlastPoint: true}
-                ).addTo(map_6f26009403214656b8e48ab26e22b451);
+                ).addTo(map_ebef4ad4b2164a4dbf0ad1618d7138d0);
         
 </script>

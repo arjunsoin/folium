@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_2d74f28d95314bd591b87f5638e5a096 {
+            <style> #map_c768e0e433044567837bf456adc0cc30 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_2d74f28d95314bd591b87f5638e5a096" ></div>
+            <div class="folium-map" id="map_c768e0e433044567837bf456adc0cc30" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_2d74f28d95314bd591b87f5638e5a096 = L.map(
-                                  'map_2d74f28d95314bd591b87f5638e5a096',
+            var map_c768e0e433044567837bf456adc0cc30 = L.map(
+                                  'map_c768e0e433044567837bf456adc0cc30',
                                   {center: [46.8527,-121.7649],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_061ace3e10d64a6a89aa7f9c298443e7 = L.tileLayer(
+            var tile_layer_3645e10971f741ed95e7af085da7f186 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -66,40 +66,40 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_2d74f28d95314bd591b87f5638e5a096);
+                ).addTo(map_c768e0e433044567837bf456adc0cc30);
 
         
     
 
-            var marker_8d00b3fa24cf4b6fafe46bc807208643 = L.marker(
+            var marker_07bfe69ea72e49c5934f9fd12155576c = L.marker(
                 [46.8354,-121.7325],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_2d74f28d95314bd591b87f5638e5a096);
+                .addTo(map_c768e0e433044567837bf456adc0cc30);
             
     
-            var popup_1cb98cd5b4ae45c59acbda717202742c = L.popup({maxWidth: '300'});
+            var popup_dcc28b7069794e829b83d9c54c3e95a5 = L.popup({maxWidth: '300'});
 
             
-                var html_7f467e3b2afe45ce87be0bde2c48555f = $('<div id="html_7f467e3b2afe45ce87be0bde2c48555f" style="width: 100.0%; height: 100.0%;">Camp Muir</div>')[0];
-                popup_1cb98cd5b4ae45c59acbda717202742c.setContent(html_7f467e3b2afe45ce87be0bde2c48555f);
+                var html_4452d16c2ca445aaa9d6e65dd55943ce = $('<div id="html_4452d16c2ca445aaa9d6e65dd55943ce" style="width: 100.0%; height: 100.0%;">Camp Muir</div>')[0];
+                popup_dcc28b7069794e829b83d9c54c3e95a5.setContent(html_4452d16c2ca445aaa9d6e65dd55943ce);
             
 
-            marker_8d00b3fa24cf4b6fafe46bc807208643.bindPopup(popup_1cb98cd5b4ae45c59acbda717202742c);
+            marker_07bfe69ea72e49c5934f9fd12155576c.bindPopup(popup_dcc28b7069794e829b83d9c54c3e95a5);
 
             
         
     
                 function newMarker(e){
-                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_2d74f28d95314bd591b87f5638e5a096);
+                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_c768e0e433044567837bf456adc0cc30);
                     new_mark.dragging.enable();
-                    new_mark.on('dblclick', function(e){ map_2d74f28d95314bd591b87f5638e5a096.removeLayer(e.target)})
+                    new_mark.on('dblclick', function(e){ map_c768e0e433044567837bf456adc0cc30.removeLayer(e.target)})
                     var lat = e.latlng.lat.toFixed(4),
                        lng = e.latlng.lng.toFixed(4);
                     new_mark.bindPopup("Waypoint");
                     };
-                map_2d74f28d95314bd591b87f5638e5a096.on('click', newMarker);
+                map_c768e0e433044567837bf456adc0cc30.on('click', newMarker);
             
 </script>

@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_ff2f91c0095d41e285b901af7ba9e389 {
+            <style> #map_cabe7cb918dc4abab7c2928827876542 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_ff2f91c0095d41e285b901af7ba9e389" ></div>
+            <div class="folium-map" id="map_cabe7cb918dc4abab7c2928827876542" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_ff2f91c0095d41e285b901af7ba9e389 = L.map(
-                                  'map_ff2f91c0095d41e285b901af7ba9e389',
+            var map_cabe7cb918dc4abab7c2928827876542 = L.map(
+                                  'map_cabe7cb918dc4abab7c2928827876542',
                                   {center: [37.0,0.0],
                                   zoom: 1,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_4b9f28abae8149b194a1e9b5d303dd47 = L.tileLayer(
+            var tile_layer_6c3879855d35419f91b6933a685a445f = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,27 +66,27 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_ff2f91c0095d41e285b901af7ba9e389);
+                ).addTo(map_cabe7cb918dc4abab7c2928827876542);
 
         
     
-                var image_overlay_f097fa6a89084cdb9aa2579108013d58 = L.imageOverlay(
+                var image_overlay_47b8e627870343dba2a20181ec4714c9 = L.imageOverlay(
                     'merc.png',
                     [[-82, -180], [82, 180]],
                     {"opacity": 0.8}
-                    ).addTo(map_ff2f91c0095d41e285b901af7ba9e389);
+                    ).addTo(map_cabe7cb918dc4abab7c2928827876542);
             
     
-            var layer_control_348caad9d40e4769aba329c83d30f62a = {
-                base_layers : { "stamentoner" : tile_layer_4b9f28abae8149b194a1e9b5d303dd47, },
-                overlays : { "macro_element_f097fa6a89084cdb9aa2579108013d58" : image_overlay_f097fa6a89084cdb9aa2579108013d58, }
+            var layer_control_44987f86bee64e5f8cc8332de6426908 = {
+                base_layers : { "stamentoner" : tile_layer_6c3879855d35419f91b6933a685a445f, },
+                overlays : { "macro_element_47b8e627870343dba2a20181ec4714c9" : image_overlay_47b8e627870343dba2a20181ec4714c9, }
                 };
             L.control.layers(
-                layer_control_348caad9d40e4769aba329c83d30f62a.base_layers,
-                layer_control_348caad9d40e4769aba329c83d30f62a.overlays,
+                layer_control_44987f86bee64e5f8cc8332de6426908.base_layers,
+                layer_control_44987f86bee64e5f8cc8332de6426908.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_ff2f91c0095d41e285b901af7ba9e389);
+                }).addTo(map_cabe7cb918dc4abab7c2928827876542);
         
 </script>

@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_580898b3ef8c4889bebe905b46a7c674 {
+            <style> #map_cc8e407795a442d89c823db43f8c3578 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_580898b3ef8c4889bebe905b46a7c674" ></div>
+            <div class="folium-map" id="map_cc8e407795a442d89c823db43f8c3578" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_580898b3ef8c4889bebe905b46a7c674 = L.map(
-                                  'map_580898b3ef8c4889bebe905b46a7c674',
+            var map_cc8e407795a442d89c823db43f8c3578 = L.map(
+                                  'map_cc8e407795a442d89c823db43f8c3578',
                                   {center: [46.1991,-122.1889],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_f09d62ee64b246be95bc301dcfb82ea4 = L.tileLayer(
+            var tile_layer_8818506dd87649bead62b1ece795fdf0 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -66,18 +66,18 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_580898b3ef8c4889bebe905b46a7c674);
+                ).addTo(map_cc8e407795a442d89c823db43f8c3578);
 
         
     
-                var lat_lng_popup_efea43eba033407494a01c9770bffe1c = L.popup();
+                var lat_lng_popup_ee79f984d3e54355b3f1f175fd7f5131 = L.popup();
                 function latLngPop(e) {
-                    lat_lng_popup_efea43eba033407494a01c9770bffe1c
+                    lat_lng_popup_ee79f984d3e54355b3f1f175fd7f5131
                         .setLatLng(e.latlng)
                         .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
                                     "<br>Longitude: " + e.latlng.lng.toFixed(4))
-                        .openOn(map_580898b3ef8c4889bebe905b46a7c674);
+                        .openOn(map_cc8e407795a442d89c823db43f8c3578);
                     }
-                map_580898b3ef8c4889bebe905b46a7c674.on('click', latLngPop);
+                map_cc8e407795a442d89c823db43f8c3578.on('click', latLngPop);
             
 </script>

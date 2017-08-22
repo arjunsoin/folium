@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_97d7716d26fa40ceb0a1f8a8f1448d7d {
+            <style> #map_3c92b7aae58449d797c4760ee72b27bd {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_97d7716d26fa40ceb0a1f8a8f1448d7d" ></div>
+            <div class="folium-map" id="map_3c92b7aae58449d797c4760ee72b27bd" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_97d7716d26fa40ceb0a1f8a8f1448d7d = L.map(
-                                  'map_97d7716d26fa40ceb0a1f8a8f1448d7d',
+            var map_3c92b7aae58449d797c4760ee72b27bd = L.map(
+                                  'map_3c92b7aae58449d797c4760ee72b27bd',
                                   {center: [45.5236,-122.675],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_9dfb79e9ee824f4591b654281b19a5ff = L.tileLayer(
+            var tile_layer_c17a21c3c7334549bf5081ceab62f011 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,34 +66,34 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_97d7716d26fa40ceb0a1f8a8f1448d7d);
+                ).addTo(map_3c92b7aae58449d797c4760ee72b27bd);
 
         
     
 
-            var marker_5f0f67b3b23e4885b1c3bb6ba9efee75 = L.marker(
+            var marker_78c6857f9b3549ecb653c32fcda277e1 = L.marker(
                 [45.5244,-122.6699],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_97d7716d26fa40ceb0a1f8a8f1448d7d);
+                .addTo(map_3c92b7aae58449d797c4760ee72b27bd);
             
     
-            var popup_b8ca38b2ff554f64bdcc721780e26a5f = L.popup({maxWidth: '300'});
+            var popup_67528221409b490aadf3b2f2f08bf8a3 = L.popup({maxWidth: '300'});
 
             
-                var html_d577a0f8b2884558b5fb8a6d9103a465 = $('<div id="html_d577a0f8b2884558b5fb8a6d9103a465" style="width: 100.0%; height: 100.0%;">The Waterfront</div>')[0];
-                popup_b8ca38b2ff554f64bdcc721780e26a5f.setContent(html_d577a0f8b2884558b5fb8a6d9103a465);
+                var html_9a5b4827c4bf4a1b939f535e6164f5a4 = $('<div id="html_9a5b4827c4bf4a1b939f535e6164f5a4" style="width: 100.0%; height: 100.0%;">The Waterfront</div>')[0];
+                popup_67528221409b490aadf3b2f2f08bf8a3.setContent(html_9a5b4827c4bf4a1b939f535e6164f5a4);
             
 
-            marker_5f0f67b3b23e4885b1c3bb6ba9efee75.bindPopup(popup_b8ca38b2ff554f64bdcc721780e26a5f);
+            marker_78c6857f9b3549ecb653c32fcda277e1.bindPopup(popup_67528221409b490aadf3b2f2f08bf8a3);
 
             
         
     
 
-            var circle_marker_fa9c5d48f8ea4b7cad6a1de24a22175b = L.circleMarker(
+            var circle_marker_bcb29e44e1094185bb5bfb15612ac7dd = L.circleMarker(
                 [45.5215,-122.6261],
                 {
                     color: '#3186cc',
@@ -103,17 +103,17 @@
                     }
                 )
                 .setRadius(50)
-                .addTo(map_97d7716d26fa40ceb0a1f8a8f1448d7d);
+                .addTo(map_3c92b7aae58449d797c4760ee72b27bd);
             
     
-            var popup_c3ecd522870f4bccb76aa9fc1575f295 = L.popup({maxWidth: '300'});
+            var popup_3795e1f448c34727ab3e3ead1154e2c1 = L.popup({maxWidth: '300'});
 
             
-                var html_008100cd2fd447fb8efc0620c3b26f86 = $('<div id="html_008100cd2fd447fb8efc0620c3b26f86" style="width: 100.0%; height: 100.0%;">Laurelhurst Park</div>')[0];
-                popup_c3ecd522870f4bccb76aa9fc1575f295.setContent(html_008100cd2fd447fb8efc0620c3b26f86);
+                var html_028cd46cd90346808af7e58e62dee5e5 = $('<div id="html_028cd46cd90346808af7e58e62dee5e5" style="width: 100.0%; height: 100.0%;">Laurelhurst Park</div>')[0];
+                popup_3795e1f448c34727ab3e3ead1154e2c1.setContent(html_028cd46cd90346808af7e58e62dee5e5);
             
 
-            circle_marker_fa9c5d48f8ea4b7cad6a1de24a22175b.bindPopup(popup_c3ecd522870f4bccb76aa9fc1575f295);
+            circle_marker_bcb29e44e1094185bb5bfb15612ac7dd.bindPopup(popup_3795e1f448c34727ab3e3ead1154e2c1);
 
             
         

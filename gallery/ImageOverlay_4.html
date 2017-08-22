@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_df4abaa4b5134fb9ba14eccadacf71ff {
+            <style> #map_b2b64d634c9845a1bb2c71daf23d39fa {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_df4abaa4b5134fb9ba14eccadacf71ff" ></div>
+            <div class="folium-map" id="map_b2b64d634c9845a1bb2c71daf23d39fa" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_df4abaa4b5134fb9ba14eccadacf71ff = L.map(
-                                  'map_df4abaa4b5134fb9ba14eccadacf71ff',
+            var map_b2b64d634c9845a1bb2c71daf23d39fa = L.map(
+                                  'map_b2b64d634c9845a1bb2c71daf23d39fa',
                                   {center: [37.0,0.0],
                                   zoom: 3,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_605abe2158d44d62832d63342ae17cf5 = L.tileLayer(
+            var tile_layer_c0cec76ae08941aeb85dd2dbeaa4ca15 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,24 +66,24 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_df4abaa4b5134fb9ba14eccadacf71ff);
+                ).addTo(map_b2b64d634c9845a1bb2c71daf23d39fa);
 
         
     
-                var poly_line_a930b44208c44abd96c7ed5320873c0e = L.polyline(
+                var poly_line_ad8d70316dcd4c71b69e70c87ced3765 = L.polyline(
                     [[45, -60], [45, 60]],
                     {
                         
                         
                         
                         });
-                map_df4abaa4b5134fb9ba14eccadacf71ff.addLayer(poly_line_a930b44208c44abd96c7ed5320873c0e);
+                map_b2b64d634c9845a1bb2c71daf23d39fa.addLayer(poly_line_ad8d70316dcd4c71b69e70c87ced3765);
             
     
-                var image_overlay_7966663758ac485596294f4bb09a9395 = L.imageOverlay(
+                var image_overlay_5f916833a4d14b83924dba877e1018f9 = L.imageOverlay(
                     'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAYAAAAeYmHpAAAAcUlEQVR42u3UoQ3AMBAEwe8gZaTWNOkqwt8kemoQeANWOjrkqqs6rfrGE9SgKyhoaGhoaGhoaGhoaGhoaOgf6DuoQb9BDfoKypFBQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQx/QK6jeyLbHDyLC/bQAAAAASUVORK5CYII=',
                     [[0, -60], [60, 60]],
                     {"opacity": 1.0}
-                    ).addTo(map_df4abaa4b5134fb9ba14eccadacf71ff);
+                    ).addTo(map_b2b64d634c9845a1bb2c71daf23d39fa);
             
 </script>

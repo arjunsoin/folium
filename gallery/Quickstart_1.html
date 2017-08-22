@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_7063c00e98bc45a5aca8cab80f58a6e2 {
+            <style> #map_6ea16a4c4b304b3cba71ec3f00364721 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_7063c00e98bc45a5aca8cab80f58a6e2" ></div>
+            <div class="folium-map" id="map_6ea16a4c4b304b3cba71ec3f00364721" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_7063c00e98bc45a5aca8cab80f58a6e2 = L.map(
-                                  'map_7063c00e98bc45a5aca8cab80f58a6e2',
+            var map_6ea16a4c4b304b3cba71ec3f00364721 = L.map(
+                                  'map_6ea16a4c4b304b3cba71ec3f00364721',
                                   {center: [45.372,-121.6972],
                                   zoom: 12,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_1ecc3a5b54dc4679a4bbd83679803eb2 = L.tileLayer(
+            var tile_layer_2060fc2605574273ae6f1413662266c7 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -66,50 +66,50 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_7063c00e98bc45a5aca8cab80f58a6e2);
+                ).addTo(map_6ea16a4c4b304b3cba71ec3f00364721);
 
         
     
 
-            var marker_84b358b81e984afea7df47df26674fe0 = L.marker(
+            var marker_39fac5319e4543288e05e6515defe250 = L.marker(
                 [45.3288,-121.6625],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_7063c00e98bc45a5aca8cab80f58a6e2);
+                .addTo(map_6ea16a4c4b304b3cba71ec3f00364721);
             
     
-            var popup_931273262ea04349b0d97cf5ad653c1f = L.popup({maxWidth: '300'});
+            var popup_21c657944df544a7ba830dcf20d0418a = L.popup({maxWidth: '300'});
 
             
-                var html_39e29619968746f7b1f671f2e858b643 = $('<div id="html_39e29619968746f7b1f671f2e858b643" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
-                popup_931273262ea04349b0d97cf5ad653c1f.setContent(html_39e29619968746f7b1f671f2e858b643);
+                var html_e073dfb9d19446e8bb4eb458c2590a69 = $('<div id="html_e073dfb9d19446e8bb4eb458c2590a69" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
+                popup_21c657944df544a7ba830dcf20d0418a.setContent(html_e073dfb9d19446e8bb4eb458c2590a69);
             
 
-            marker_84b358b81e984afea7df47df26674fe0.bindPopup(popup_931273262ea04349b0d97cf5ad653c1f);
+            marker_39fac5319e4543288e05e6515defe250.bindPopup(popup_21c657944df544a7ba830dcf20d0418a);
 
             
         
     
 
-            var marker_aefc18989132406c9fe5816af8b8144a = L.marker(
+            var marker_12d4bce8e7f0403693f8247d865eb27e = L.marker(
                 [45.3311,-121.7113],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_7063c00e98bc45a5aca8cab80f58a6e2);
+                .addTo(map_6ea16a4c4b304b3cba71ec3f00364721);
             
     
-            var popup_a915f79f8f924bd78db9822b4bf794e6 = L.popup({maxWidth: '300'});
+            var popup_33ec91f4baa341058b3e5f4fb1e565f1 = L.popup({maxWidth: '300'});
 
             
-                var html_34040fbbad064bddb8dbf818f2ddfdde = $('<div id="html_34040fbbad064bddb8dbf818f2ddfdde" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>')[0];
-                popup_a915f79f8f924bd78db9822b4bf794e6.setContent(html_34040fbbad064bddb8dbf818f2ddfdde);
+                var html_92cd7cc6f4e34772bbff916a3300e362 = $('<div id="html_92cd7cc6f4e34772bbff916a3300e362" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>')[0];
+                popup_33ec91f4baa341058b3e5f4fb1e565f1.setContent(html_92cd7cc6f4e34772bbff916a3300e362);
             
 
-            marker_aefc18989132406c9fe5816af8b8144a.bindPopup(popup_a915f79f8f924bd78db9822b4bf794e6);
+            marker_12d4bce8e7f0403693f8247d865eb27e.bindPopup(popup_33ec91f4baa341058b3e5f4fb1e565f1);
 
             
         
